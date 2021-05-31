@@ -8,6 +8,7 @@
 #gallery > :not(:nth-child(2)){
     padding: 20px;
     background-color: #fff;
+    margin-bottom: 50px;
 }
 
 #back{
@@ -29,16 +30,19 @@
 
 .presentacion{
     min-width: 300px;
+    padding: 25px;
     margin-bottom: 50px;
     background-color: #fff;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+    border-radius: 20px;
 }
 
 .presentacion .portrait{
-    width: 300px;
+    width: 250px;
+    height: 300px;
     overflow: hidden;
-    padding: 10px;
     border-block-end: 1px solid;
+    border-radius: 20px;
 }
 
 .presentacion .portrait img{
@@ -47,8 +51,7 @@
 
 .presentacion .descripcion{
     text-align: center;
-    width: 300px;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .presentacion label{
@@ -86,6 +89,10 @@
     .gallerysection img {
         width: 200px;
         margin: 0px 20px;
+    }
+
+    #gallery > :not(:nth-child(2)){
+        margin-bottom: 100px;
     }
 
     .fila{
