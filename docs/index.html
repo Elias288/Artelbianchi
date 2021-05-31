@@ -26,73 +26,89 @@
     </header>
     <main>
         <img src="img/Portada.jpg" alt="portada" id="portada">
-        
+
         <input type="radio" name="rdmenu" id="rdHome" checked>
         <section id="home">
             <div style="width: 100%; height: calc(100vh - 256px);"></div>
         </section>
-        
+
         <input type="radio" name="rdmenu" id="rdGallery">
-        <section id="gallery">      
+        <section id="gallery">
             <input type="radio" name="rdgallery" id="rdPrensentaciones" checked>
             <section id="presentaciones">
                 <div id="CPR" class="presentacion">
-                    <div class="portrait">
-                        <label for="rdCPR"><img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="CPR_fotoPrincipal"></label>
-                    </div>
-                    <div class="descripcion">
-                        <h2>Chica del pañuelo rojo</h2>
-                        <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza</p>  
-                    </div>
-                    
+                    <label for="rdCPR">
+                        <div class="portrait">
+                            <img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="CPR_fotoPrincipal">
+                        </div>
+                        <div class="descripcion">
+                            <h2>Chica del pañuelo rojo</h2>
+                            <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza</p>
+                        </div>
+                    </label>
                 </div>
                 <div id="VDF" class="presentacion">
-                    <div class="portrait"><label for="rdVDF"><img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_fotoPrincipal"></label></div>
-                    <div class="descripcion">
-                        <h2>Virgen de Fatima</h2>
-                        <p>Cuadro de una imagen de la virgen de fatima</p>
-                    </div>
+                    <label for="rdVDF">
+                        <div class="portrait"><img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_fotoPrincipal"></div>
+                        <div class="descripcion">
+                            <h2>Virgen de Fatima</h2>
+                            <p>Cuadro de una imagen de la virgen de fatima</p>
+                        </div>
+                    </label>
                 </div>
             </section>
 
             <input type="radio" name="rdgallery" id="rdCPR">
-            <section id="CPRsection">
-                <h2>Chica del pañuelo rojo</h2>
-                <label for="rdPrensentaciones">←</label>
-                <img src="img/ChicaDelPañueloRojo/LCPRBoceto.jpg" alt="LCPR_first">
-                <img src="img/ChicaDelPañueloRojo/LCPR01.jpg" alt="LCPR_first">
-                <img src="img/ChicaDelPañueloRojo/LCPR02.jpg" alt="LCPR_02">
-                <img src="img/ChicaDelPañueloRojo/LCPR03.jpg" alt="LCPR_03">
-                <img src="img/ChicaDelPañueloRojo/LCPR04.jpg" alt="LCPR_04">
-                <img src="img/ChicaDelPañueloRojo/LCPR05.jpg" alt="LCPR_05">
-                <img src="img/ChicaDelPañueloRojo/LCPR06.jpg" alt="LCPR_06">
-                <img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="LCPR_last">
+            <section id="CPRsection" class="gallerysection">
+                <label for="rdPrensentaciones" id="back"></label>
+                <div class="descripcion">
+                    <h2>Chica del pañuelo rojo</h2>
+                    <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza</p>
+                </div>
+                <div class="fila">
+                    <img src="img/ChicaDelPañueloRojo/LCPRBoceto.jpg" alt="LCPR_first">
+                    <img src="img/ChicaDelPañueloRojo/LCPR01.jpg" alt="LCPR_first">
+                    <img src="img/ChicaDelPañueloRojo/LCPR02.jpg" alt="LCPR_02">
+                    <img src="img/ChicaDelPañueloRojo/LCPR03.jpg" alt="LCPR_03">
+                    <img src="img/ChicaDelPañueloRojo/LCPR04.jpg" alt="LCPR_04">
+                    <img src="img/ChicaDelPañueloRojo/LCPR05.jpg" alt="LCPR_05">
+                    <img src="img/ChicaDelPañueloRojo/LCPR06.jpg" alt="LCPR_06">
+                    <img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="LCPR_last">
+                </div>
+                
             </section>
             <input type="radio" name="rdgallery" id="rdVDF">
-            <section id="VDFsection">
-                <h2>Virgen de fatima</h2>
-                <label for="rdPrensentaciones">←</label>
-                <img src="img/VirgenDeFatima/VDFBoceto.jpg" alt="VDF_boceto">
-                <img src="img/VirgenDeFatima/VDF01.jpg" alt="VDF_first">
-                <img src="img/VirgenDeFatima/VDF02.jpg" alt="VDF_02">
-                <img src="img/VirgenDeFatima/VDF03.jpg" alt="VDF_03">
-                <img src="img/VirgenDeFatima/VDF04.jpg" alt="VDF_04">
-                <img src="img/VirgenDeFatima/VDF05.jpg" alt="VDF_05">
-                <img src="img/VirgenDeFatima/VDF06.jpg" alt="VDF_06">
-                <img src="img/VirgenDeFatima/VDF07.jpg" alt="VDF_07">
-                <img src="img/VirgenDeFatima/VDF08.jpg" alt="VDF_08">
-                <img src="img/VirgenDeFatima/VDF09.jpg" alt="VDF_09">
-                <img src="img/VirgenDeFatima/VDF10.jpg" alt="VDF_10">
-                <img src="img/VirgenDeFatima/VDF11.jpg" alt="VDF_11">
-                <img src="img/VirgenDeFatima/VDF12.jpg" alt="VDF_12">
-                <img src="img/VirgenDeFatima/VDF13.jpg" alt="VDF_13">
-                <img src="img/VirgenDeFatima/VDF14.jpg" alt="VDF_14">
-                <img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_Last">
+            <section id="VDFsection" class="gallerysection">
+                <label for="rdPrensentaciones" id="back"></label>
+                <div class="descripcion">
+                    <h2>Virgen de fatima</h2>
+                    <p>Cuadro de una imagen de la virgen de fatima</p>
+                </div>
+                <div class="fila">
+                    <img src="img/VirgenDeFatima/VDFBoceto.jpg" alt="VDF_boceto">
+                    <img src="img/VirgenDeFatima/VDF01.jpg" alt="VDF_first">
+                    <img src="img/VirgenDeFatima/VDF02.jpg" alt="VDF_02">
+                    <img src="img/VirgenDeFatima/VDF03.jpg" alt="VDF_03">
+                    <img src="img/VirgenDeFatima/VDF04.jpg" alt="VDF_04">
+                    <img src="img/VirgenDeFatima/VDF05.jpg" alt="VDF_05">
+                    <img src="img/VirgenDeFatima/VDF06.jpg" alt="VDF_06">
+                    <img src="img/VirgenDeFatima/VDF07.jpg" alt="VDF_07">
+                    <img src="img/VirgenDeFatima/VDF08.jpg" alt="VDF_08">
+                    <img src="img/VirgenDeFatima/VDF09.jpg" alt="VDF_09">
+                    <img src="img/VirgenDeFatima/VDF10.jpg" alt="VDF_10">
+                    <img src="img/VirgenDeFatima/VDF11.jpg" alt="VDF_11">
+                    <img src="img/VirgenDeFatima/VDF12.jpg" alt="VDF_12">
+                    <img src="img/VirgenDeFatima/VDF13.jpg" alt="VDF_13">
+                    <img src="img/VirgenDeFatima/VDF14.jpg" alt="VDF_14">
+                    <img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_Last">
+                </div>
+                
             </section>
         </section>
-        
+
         <input type="radio" name="rdmenu" id="rdAbout">
         <section id="about">
+            <div style="width: 100%; height: calc(100vh - 256px);"></div>
         </section>
     </main>
 </body>

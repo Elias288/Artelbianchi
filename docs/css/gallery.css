@@ -1,0 +1,95 @@
+
+#gallery > section{
+    display: none;
+    width: 300px;
+    margin: auto;
+}
+
+#gallery > :not(:nth-child(2)){
+    padding: 20px;
+    background-color: #fff;
+}
+
+#back{
+    background: url(/docs/img/back.png);
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+#rdPrensentaciones:checked ~ #presentaciones,
+#rdCPR:checked ~ #CPRsection,
+#rdVDF:checked ~ #VDFsection
+{
+    display: block;
+}
+
+.presentacion{
+    min-width: 300px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
+}
+
+.presentacion .portrait{
+    width: 300px;
+    overflow: hidden;
+    padding: 10px;
+    border-block-end: 1px solid;
+}
+
+.presentacion .portrait img{
+    width: 100%;
+}
+
+.presentacion .descripcion{
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+}
+
+.presentacion label{
+    cursor: pointer;
+}
+
+.gallerysection img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallerysection .descripcion{
+    margin: 30px 0px;
+}
+
+@media (min-width: 1024px){
+    #gallery > section{
+        min-width: 840px;
+    }
+
+    .presentacion .portrait{
+        border-block-end: 0px;
+    }
+
+    .presentacion .descripcion{
+        width: 100%;
+        text-align: initial;
+        padding: 50px 20px;
+    }
+
+    .presentacion label{
+        display: flex;
+    }
+
+    .gallerysection img {
+        width: 200px;
+        margin: 0px 20px;
+    }
+
+    .fila{
+        display: flex;
+        overflow: scroll;
+    }
+}
