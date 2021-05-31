@@ -13,9 +13,11 @@
 
 <body>
     <header>
-        <div class="container">
+        <div id="container">
             <h1>Artelbianchi</h1>
-            <nav>
+            <label for="chMenu" id="menutoggle"></label>
+            <input type="checkbox" name="chMenu" id="chMenu">
+            <nav id="menu">
                 <label for="rdHome">HOME</label>
                 <label for="rdGallery">GALERIA</label>
                 <label for="rdAbout">SOBRE MI</label>
@@ -24,12 +26,14 @@
     </header>
     <main>
         <img src="img/Portada.jpg" alt="portada" id="portada">
+        
         <input type="radio" name="rdmenu" id="rdHome" checked>
-        <section id="home"></section>
+        <section id="home">
+            <div style="width: 100%; height: calc(100vh - 256px);"></div>
+        </section>
         
         <input type="radio" name="rdmenu" id="rdGallery">
-        <section id="gallery">
-            
+        <section id="gallery">      
             <input type="radio" name="rdgallery" id="rdPrensentaciones" checked>
             <section id="presentaciones">
                 <div id="CPR" class="presentacion">
@@ -86,8 +90,10 @@
                 <img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_Last">
             </section>
         </section>
+        
         <input type="radio" name="rdmenu" id="rdAbout">
-        <section id="about"></section>
+        <section id="about">
+        </section>
     </main>
 </body>
 

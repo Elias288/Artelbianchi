@@ -1,0 +1,91 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top: 0px;
+    background: var(--color_principal);
+    display: table;
+}
+
+header h1{
+    float: left;
+    margin: 9px 30px;
+}
+
+#menutoggle{
+    width: 30px;
+    height: 37px;
+    margin: 9px;
+    display: block;
+    z-index: 1000;
+    background: url(/docs/img/menu-icon-01.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    font-size: 30px;
+}
+
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(200%);
+    background: var(--color_principal_transparente);
+    display: block;
+    transition: all 0.55s;
+    cursor: pointer;
+    top: 50px;
+}
+
+#menu label {
+    display: block;
+    border-bottom: 1px solid #fff;
+    font-size: 30px;
+    height: 70px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#menu label:hover{
+    background: var(--color_selected);
+}
+
+#chMenu:checked ~ #menu{
+    transform: translateX(0%);
+}
+
+#rdHome:checked ~ #home,
+#rdGallery:checked ~ #gallery,
+#rdAbout:checked ~ #about{
+    display: block;
+}
+
+@media (min-width: 1024px){
+    #container {
+        width: 1000px;
+        margin: auto;
+    }
+    
+    #menu{
+        transform: translateX(0%);
+        left: 0;
+        float: right;
+        width: auto;
+        height: auto;
+        position: static;
+        display: flex;
+    }
+
+    #menu label {
+        height: 55px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    #menutoggle{
+        display: none;
+    }
+}

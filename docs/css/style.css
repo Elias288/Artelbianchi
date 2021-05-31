@@ -1,22 +1,35 @@
+@import url(menu.css);
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #fff;
-    background-image:
-    linear-gradient(90deg, transparent 79px, #abced4 79px, #b3170b 81px, transparent 81px),
-    linear-gradient(rgb(46, 74, 235) .1em, transparent .1em);
-    background-size: 100% 1.2em;
+:root{
+    --color_principal: rgb(95, 158, 160);
+    --color_principal_transparente: rgb(95, 158, 160, 0.9);
+    --color_selected: rgba(255, 255, 255, 0.3);
 }
 
-header{
-    position: fixed;
+body{
     width: 100%;
-    top: 0px;
-    background: cadetblue;
+    height:100%;
+    background-size: 400% 400%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 input {
@@ -30,12 +43,6 @@ main > section{
 #portada{
     width: 100%;
     margin: 55px 0px;
-}
-
-#rdHome:checked ~ #home,
-#rdGallery:checked ~ #gallery,
-#rdAbout:checked ~ #about{
-    display: block;
 }
 
 p{
@@ -90,7 +97,7 @@ img{
 }
 
 @media (min-width: 1024px){
-    main{
+    main > section{
         width: 90%;
         margin: auto;
     }
