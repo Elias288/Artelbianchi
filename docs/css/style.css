@@ -1,21 +1,25 @@
 @import url(menu.css);
 @import url(gallery.css);
-
-*{
+@import url(home.css);
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color_principal: rgb(95, 158, 160);
     --color_principal_transparente: rgb(95, 158, 160, 0.9);
     --color_selected: rgba(255, 255, 255, 0.3);
+    --ancho_PC: 1000px;
+    --width-img: 100%;
+    --height-img: 400px
 }
 
-body{
+body {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    height:100%;
+    min-height: calc(100vh - 55px);
     background-size: 400% 400%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     animation: gradient 15s ease infinite;
@@ -37,28 +41,39 @@ input {
     display: none;
 }
 
-main > section{
-    display: none;
-}
-
-#portada{
-    min-width: 100%;
+main>section {
     margin: 55px 0px;
 }
 
-p{
+.gallerysection {
+    display: none;
+}
+
+#portada {
+    min-width: 100%;
+}
+
+#portada img {
+    width: 100%;
+}
+
+p {
     font-size: 20px;
 }
 
-img{
+img {
     width: 300px;
 }
 
+
 /*-------------------------------------Home------------------------------------*/
 
-@media (min-width: 1024px){
-    main > section{
-        width: 90%;
-        margin: auto;
+@media (min-width: 1024px) {
+    body {
+        min-height: 100vh;
+    }
+    main>section {
+        width: var(--ancho_PC);
+        margin: 55px auto;
     }
 }
