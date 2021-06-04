@@ -1,6 +1,7 @@
 @import url(menu.css);
 @import url(gallery.css);
 @import url(home.css);
+@import url(view.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 * {
     margin: 0px;
@@ -44,23 +45,6 @@ input {
 
 main>section {
     margin-top: 55px;
-    display: block;
-}
-
-main section:not(:first-of-type) {
-    background-color: rgb(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    cursor: default;
-    transition: opacity 200ms;
-}
-
-main section:target {
-    display: block;
 }
 
 #portada {
@@ -85,9 +69,5 @@ img {
 @media (min-width: 1024px) {
     body {
         min-height: 100vh;
-    }
-    main>section:first-child {
-        width: 1000px;
-        margin: 55px auto;
     }
 }

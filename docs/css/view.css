@@ -1,0 +1,100 @@
+#main_view>section {
+    display: none;
+}
+
+#main_view section:target {
+    display: block;
+}
+
+#back {
+    background: url(../img/back.png);
+    width: 40px;
+    height: 35px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 900;
+}
+
+.descripcion {
+    margin: 0px auto 1em;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.fila {
+    position: relative;
+    margin: 0px auto 0px;
+    height: calc(400px + 4em);
+    width: 100%;
+}
+
+.fila.horizontal {
+    height: calc(300px + 4em);
+}
+
+.fila a {
+    opacity: 0;
+    display: none;
+}
+
+.fila a,
+.fila img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 3s;
+    width: var(--width-img);
+    height: calc(var(--height-img) - 2em);
+    object-fit: contain;
+}
+
+.fila.fila.horizontal a,
+.fila.fila.horizontal img {
+    height: calc(250px + 2em);
+}
+
+.fila input[type=radio] {
+    display: inline;
+    position: relative;
+    bottom: -400px;
+    left: .5em;
+    width: 25px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.fila.horizontal input[type=radio] {
+    bottom: -300px;
+}
+
+.fila input[type=radio]:nth-of-type(1):checked~a:nth-of-type(1),
+.fila input[type=radio]:nth-of-type(2):checked~a:nth-of-type(2),
+.fila input[type=radio]:nth-of-type(3):checked~a:nth-of-type(3),
+.fila input[type=radio]:nth-of-type(4):checked~a:nth-of-type(4),
+.fila input[type=radio]:nth-of-type(5):checked~a:nth-of-type(5),
+.fila input[type=radio]:nth-of-type(6):checked~a:nth-of-type(6),
+.fila input[type=radio]:nth-of-type(7):checked~a:nth-of-type(7),
+.fila input[type=radio]:nth-of-type(8):checked~a:nth-of-type(8),
+.fila input[type=radio]:nth-of-type(9):checked~a:nth-of-type(9),
+.fila input[type=radio]:nth-of-type(10):checked~a:nth-of-type(10),
+.fila input[type=radio]:nth-of-type(11):checked~a:nth-of-type(11),
+.fila input[type=radio]:nth-of-type(12):checked~a:nth-of-type(12),
+.fila input[type=radio]:nth-of-type(13):checked~a:nth-of-type(13),
+.fila input[type=radio]:nth-of-type(14):checked~a:nth-of-type(14),
+.fila input[type=radio]:nth-of-type(15):checked~a:nth-of-type(15),
+.fila input[type=radio]:nth-of-type(16):checked~a:nth-of-type(16) {
+    opacity: 1;
+    display: block;
+}
+
+@media (min-width) {
+    main>section:first-child {
+        width: 1000px;
+        margin: 55px auto;
+    }
+}

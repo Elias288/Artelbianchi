@@ -9,19 +9,6 @@
     padding: 0;
 }
 
-
-/*
-.leftcolumn {
-    float: left;
-    width: 75%;
-}
-
-.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-}*/
-
 .fakeimg {
     margin: 2em 0px;
 }
@@ -45,89 +32,40 @@
     clear: both;
 }
 
-#back {
-    background: url(../img/back.png);
-    width: 40px;
-    height: 35px;
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    background-color: #fff;
-    border-radius: 25px;
-    position: absolute;
-    z-index: 1000;
-}
 
-.descripcion {
-    margin: 0px auto 1em;
-    background-color: #fff;
-    padding: 20px;
-}
+/*ABOUT*/
 
-.fila {
-    position: relative;
-    margin: 0px auto 0px;
-    height: calc(400px + 4em);
-    width: 100%;
-}
-
-.fila.horizontal {
-    height: calc(300px + 4em);
-}
-
-.fila a {
-    opacity: 0;
+.modaloverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.8);
     display: none;
 }
 
-.fila a,
-.fila img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 3s;
-    width: var(--width-img);
-    height: calc(var(--height-img) - 2em);
+.modal {
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.25);
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#about:target {
+    display: block;
+    pointer-events: auto;
+}
+
+#about img {
+    width: 100%;
+    height: 150px;
     object-fit: contain;
 }
-
-.fila input[type=radio] {
-    display: inline;
-    position: relative;
-    bottom: -400px;
-    left: .5em;
-    width: 25px;
-    height: 20px;
-    margin-bottom: 20px;
-}
-
-.fila.horizontal input[type=radio] {
-    bottom: -300px;
-}
-
-.fila input[type=radio]:nth-of-type(1):checked~a:nth-of-type(1),
-.fila input[type=radio]:nth-of-type(2):checked~a:nth-of-type(2),
-.fila input[type=radio]:nth-of-type(3):checked~a:nth-of-type(3),
-.fila input[type=radio]:nth-of-type(4):checked~a:nth-of-type(4),
-.fila input[type=radio]:nth-of-type(5):checked~a:nth-of-type(5),
-.fila input[type=radio]:nth-of-type(6):checked~a:nth-of-type(6),
-.fila input[type=radio]:nth-of-type(7):checked~a:nth-of-type(7),
-.fila input[type=radio]:nth-of-type(8):checked~a:nth-of-type(8),
-.fila input[type=radio]:nth-of-type(9):checked~a:nth-of-type(9),
-.fila input[type=radio]:nth-of-type(10):checked~a:nth-of-type(10),
-.fila input[type=radio]:nth-of-type(11):checked~a:nth-of-type(11),
-.fila input[type=radio]:nth-of-type(12):checked~a:nth-of-type(12),
-.fila input[type=radio]:nth-of-type(13):checked~a:nth-of-type(13),
-.fila input[type=radio]:nth-of-type(14):checked~a:nth-of-type(14),
-.fila input[type=radio]:nth-of-type(15):checked~a:nth-of-type(15),
-.fila input[type=radio]:nth-of-type(16):checked~a:nth-of-type(16) {
-    opacity: 1;
-    display: block;
-}
-
-
-/*ABOUT*/
 
 #about h2 {
     color: #fff;
@@ -139,19 +77,12 @@
     font-size: 15px;
 }
 
-#about :nth-child(4) {
+#about div:nth-child(4) {
     background-color: #fff;
     padding: 20px 30px;
 }
 
-#about img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    margin-top: 30px;
-}
-
-#about .popup div a {
+.modal a {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -162,15 +93,6 @@
     line-height: 50px;
     margin-left: 3px;
     transition: all .25s;
-}
-
-.popup {
-    padding: 20px;
-    width: 95%;
-    min-width: 400px;
-    background-color: rgb(255, 255, 255, 0.25);
-    text-align: center;
-    margin: 1em auto;
 }
 
 footer {
@@ -266,14 +188,25 @@ footer .footer-left p.footer-links {
         width: 25%;
         padding-left: 20px;
     }
+    #home>div {
+        width: 1000px;
+        margin: auto;
+    }
+    .modal {
+        width: 1000px;
+        height: 85%;
+        margin: 55px auto;
+    }
     #about img {
         height: 150px;
     }
     #about div {
         margin-bottom: 20px;
     }
-    .popup {
-        width: 1000px;
+    #about div:nth-child(4) {
+        padding: 30px 10px;
+        margin: auto;
+        width: 50em;
     }
     footer .footer-right {
         float: right;
