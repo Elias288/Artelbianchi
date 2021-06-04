@@ -68,10 +68,6 @@ img {
 
 @media (min-width: 1024px) {
     body {
-        min-height: 100vh;
-    }
-    main>section {
-        width: 1000px;
-        margin: 55px auto;
+        min-height: calc(100vh - 55px);
     }
 }

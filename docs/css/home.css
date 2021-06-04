@@ -9,13 +9,24 @@
     padding: 0;
 }
 
+.rightcolumn>div:first-child img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.rightcolumn>div:nth-child(2) a {
+    display: inherit;
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
 .fakeimg {
     margin: 2em 0px;
 }
 
 .fakeimg img {
-    width: var(--width-img);
-    height: var(--height-img);
+    width: 100%;
     object-fit: cover;
 }
 
