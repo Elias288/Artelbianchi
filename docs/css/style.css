@@ -70,4 +70,8 @@ img {
     body {
         min-height: 100vh;
     }
+    main>section {
+        width: 1000px;
+        margin: 55px auto;
+    }
 }

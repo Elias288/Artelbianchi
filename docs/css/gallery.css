@@ -62,13 +62,6 @@
     .fila.horizontal {
         width: 500px;
     }
-    .descripcion {
-        margin: 1em 0px;
-        height: calc(450px + 4em);
-        margin: 1em auto 0px 0px;
-        padding: 50px 20px;
-        width: 25%;
-    }
     /*GALLERY*/
     #gallery>section {
         min-width: 840px;

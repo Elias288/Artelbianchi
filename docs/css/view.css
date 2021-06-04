@@ -1,5 +1,6 @@
 #main_view>section {
     display: none;
+    margin: 75px auto 0;
 }
 
 #main_view section:target {
@@ -18,28 +19,22 @@
     border-radius: 25px;
     position: absolute;
     z-index: 900;
-}
-
-.descripcion {
-    margin: 0px auto 1em;
-    background-color: #fff;
-    padding: 20px;
+    margin: 10px;
 }
 
 .fila {
+    width: 100%;
+    height: calc(var(--h) + 4em);
     position: relative;
     margin: 0px auto 0px;
-    height: calc(400px + 4em);
-    width: 100%;
-}
-
-.fila.horizontal {
-    height: calc(300px + 4em);
+    background-color: rgb(255, 255, 255, 0.50);
+    border-radius: 20px 20px 0px 0px;
 }
 
 .fila a {
     opacity: 0;
     display: none;
+    margin-top: 55px;
 }
 
 .fila a,
@@ -48,9 +43,9 @@
     top: 0;
     left: 0;
     transition: opacity 3s;
-    width: var(--width-img);
-    height: calc(var(--height-img) - 2em);
-    object-fit: contain;
+    width: 100%;
+    height: calc(var(--h) - 4em);
+    object-fit: cover;
 }
 
 .fila.fila.horizontal a,
@@ -61,15 +56,11 @@
 .fila input[type=radio] {
     display: inline;
     position: relative;
-    bottom: -400px;
+    bottom: calc(var(--h) * -1);
     left: .5em;
     width: 25px;
     height: 20px;
     margin-bottom: 20px;
-}
-
-.fila.horizontal input[type=radio] {
-    bottom: -300px;
 }
 
 .fila input[type=radio]:nth-of-type(1):checked~a:nth-of-type(1),
@@ -92,9 +83,31 @@
     display: block;
 }
 
-@media (min-width) {
-    main>section:first-child {
-        width: 1000px;
-        margin: 55px auto;
+.descripcion {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+@media (min-width: 1024px) {
+    #main_view section:target {
+        width: calc(var(--w) + 20em);
+    }
+    .content {
+        display: flex;
+    }
+    .fila {
+        width: var(--w);
+        margin: 0;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .descripcion {
+        width: 20em;
+        margin: 0;
+        padding: 60px 30px;
+    }
+    .fila a,
+    .fila img {
+        width: var(--w);
     }
 }
