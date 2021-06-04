@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2664b0a518.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Artelbianchi</title>
 </head>
 
 <body>
+    <!--HEADER-->
+    <header>
+        <div id="container">
+            <h1>ArtelBianchi</h1>
+            <label for="chMenu" id="menutoggle"></label>
+            <input type="checkbox" name="chMenu" id="chMenu">
+            <nav id="menu">
+                <a href="">HOME</a>
+                <!--<a href="gallery.html">GALERIA</a>-->
+                <a href="#about">SOBRE MI</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <!--HEADER-->
-        <header>
-            <div id="container">
-                <h1>ArtelBianchi</h1>
-                <label for="chMenu" id="menutoggle"></label>
-                <input type="checkbox" name="chMenu" id="chMenu">
-                <nav id="menu">
-                    <a href="">HOME</a>
-                    <!--<a href="gallery.html">GALERIA</a>-->
-                    <a href="#about">SOBRE MI</a>
-                </nav>
-            </div>
-        </header>
-
         <!--HOME-->
         <section id="home">
             <div class="header">
@@ -43,7 +42,7 @@
                             <img src="img/CastilloDelLago/CDL_13.jpg" alt="CDL">
                         </div>
                         <p>Cuadro de un castillo frances en un lago</p>
-                        <a href="#cdl_section">Ver mas</a>
+                        <a href="view.html#cdl_section">Ver mas</a>
                     </div>
 
                     <div class="card">
@@ -83,125 +82,151 @@
             </div>
         </section>
 
-        <section id="cpr_section" class="gallerysection">
-            <a href="#" id="back"></a>
-            <div class="fila">
-                <input type="radio" name="navegacionCPR" id="_1" checked>
-                <input type="radio" name="navegacionCPR" id="_2">
-                <input type="radio" name="navegacionCPR" id="_3">
-                <input type="radio" name="navegacionCPR" id="_4">
-                <input type="radio" name="navegacionCPR" id="_5">
-                <input type="radio" name="navegacionCPR" id="_6">
-                <input type="radio" name="navegacionCPR" id="_7">
-                <input type="radio" name="navegacionCPR" id="_8">
-                <img src="img/ChicaDelPañueloRojo/LCPRBoceto.jpg" alt="LCPR_boceto">
-                <img src="img/ChicaDelPañueloRojo/LCPR01.jpg" alt="LCPR_first">
-                <img src="img/ChicaDelPañueloRojo/LCPR02.jpg" alt="LCPR_02">
-                <img src="img/ChicaDelPañueloRojo/LCPR03.jpg" alt="LCPR_03">
-                <img src="img/ChicaDelPañueloRojo/LCPR04.jpg" alt="LCPR_04">
-                <img src="img/ChicaDelPañueloRojo/LCPR05.jpg" alt="LCPR_05">
-                <img src="img/ChicaDelPañueloRojo/LCPR06.jpg" alt="LCPR_06">
-                <img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="LCPR_last">
-            </div>
-            <div class="descripcion">
-                <h2>CHICA DEL PAÑUELO ROJO</h2>
-                <h5>mar 10, 2019 - abr 28, 2019</h5>
-                <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza</p>
-            </div>
-
-        </section>
-
-        <section id="vdf_section" class="gallerysection">
-            <a href="#" id="back"></a>
-            <div class="fila">
-                <input type="radio" name="navegacionVDF" id="_1" checked>
-                <input type="radio" name="navegacionVDF" id="_2">
-                <input type="radio" name="navegacionVDF" id="_3">
-                <input type="radio" name="navegacionVDF" id="_4">
-                <input type="radio" name="navegacionVDF" id="_5">
-                <input type="radio" name="navegacionVDF" id="_6">
-                <input type="radio" name="navegacionVDF" id="_7">
-                <input type="radio" name="navegacionVDF" id="_8">
-                <input type="radio" name="navegacionVDF" id="_9">
-                <input type="radio" name="navegacionVDF" id="_10">
-                <input type="radio" name="navegacionVDF" id="_11">
-                <input type="radio" name="navegacionVDF" id="_12">
-                <input type="radio" name="navegacionVDF" id="_13">
-                <input type="radio" name="navegacionVDF" id="_14">
-                <input type="radio" name="navegacionVDF" id="_15">
-                <input type="radio" name="navegacionVDF" id="_16">
-                <img src="img/VirgenDeFatima/VDFBoceto.jpg" alt="VDF_boceto">
-                <img src="img/VirgenDeFatima/VDF01.jpg" alt="VDF_first">
-                <img src="img/VirgenDeFatima/VDF02.jpg" alt="VDF_02">
-                <img src="img/VirgenDeFatima/VDF03.jpg" alt="VDF_03">
-                <img src="img/VirgenDeFatima/VDF04.jpg" alt="VDF_04">
-                <img src="img/VirgenDeFatima/VDF05.jpg" alt="VDF_05">
-                <img src="img/VirgenDeFatima/VDF06.jpg" alt="VDF_06">
-                <img src="img/VirgenDeFatima/VDF07.jpg" alt="VDF_07">
-                <img src="img/VirgenDeFatima/VDF08.jpg" alt="VDF_08">
-                <img src="img/VirgenDeFatima/VDF09.jpg" alt="VDF_09">
-                <img src="img/VirgenDeFatima/VDF10.jpg" alt="VDF_10">
-                <img src="img/VirgenDeFatima/VDF11.jpg" alt="VDF_11">
-                <img src="img/VirgenDeFatima/VDF12.jpg" alt="VDF_12">
-                <img src="img/VirgenDeFatima/VDF13.jpg" alt="VDF_13">
-                <img src="img/VirgenDeFatima/VDF14.jpg" alt="VDF_14">
-                <img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_Last">
-            </div>
-            <div class="descripcion">
-                <h2>Virgen de fatima</h2>
-                <p>Cuadro de una imagen de la virgen de fatima</p>
+        <!--ABOUT-->
+        <section id="about">
+            <div class="popup">
+                <a href="#" id="back"></a>
+                <div>
+                    <img src="img/logoArtelbianchi.png" alt="Logo_Artelbianchi">
+                    <h2>Artelbianchi</h2>
+                    <h5>Elias Bianchi - Artist</h5>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"></i></a>
+                    <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>My name is Elias Bianchi, I am an Uruguayan artist who likes to paint with different oil and acrylic techniques. I started painting from the age of 11 until now, I like to paint portraits and perfect my drawing technique. I am currently
+                        studying computer science without neglecting my painting hobby.</p>
+                </div>
             </div>
         </section>
 
-        <section id="cdl_section" class="gallerysection">
-            <a href="#" id="back"></a>
-            <div class="fila horizontal">
-                <input type="radio" name="navegacionCDL" id="_1" checked>
-                <input type="radio" name="navegacionCDL" id="_2">
-                <input type="radio" name="navegacionCDL" id="_3">
-                <input type="radio" name="navegacionCDL" id="_4">
-                <input type="radio" name="navegacionCDL" id="_5">
-                <input type="radio" name="navegacionCDL" id="_6">
-                <input type="radio" name="navegacionCDL" id="_7">
-                <input type="radio" name="navegacionCDL" id="_8">
-                <input type="radio" name="navegacionCDL" id="_9">
-                <input type="radio" name="navegacionCDL" id="_10">
-                <input type="radio" name="navegacionCDL" id="_11">
-                <input type="radio" name="navegacionCDL" id="_12">
-                <input type="radio" name="navegacionCDL" id="_13">
-                <img src="img/CastilloDelLago/CDL_01.jpg" alt="CDL_first">
-                <img src="img/CastilloDelLago/CDL_02.jpg" alt="CDL_02">
-                <img src="img/CastilloDelLago/CDL_03.jpg" alt="CDL_03">
-                <img src="img/CastilloDelLago/CDL_04.jpg" alt="CDL_04">
-                <img src="img/CastilloDelLago/CDL_05.jpg" alt="CDL_05">
-                <img src="img/CastilloDelLago/CDL_06.jpg" alt="CDL_06">
-                <img src="img/CastilloDelLago/CDL_07.jpg" alt="CDL_07">
-                <img src="img/CastilloDelLago/CDL_08.jpg" alt="CDL_08">
-                <img src="img/CastilloDelLago/CDL_09.jpg" alt="CDL_09">
-                <img src="img/CastilloDelLago/CDL_10.jpg" alt="CDL_10">
-                <img src="img/CastilloDelLago/CDL_11.jpg" alt="CDL_11">
-                <img src="img/CastilloDelLago/CDL_12.jpg" alt="CDL_12">
-                <img src="img/CastilloDelLago/CDL_13.jpg" alt="CDL_last">
-            </div>
-            <div class="descripcion">
-                <h2>CASTILLO DEL LAGO</h2>
-                <h5>Ago 1, 2019 - Nov 28, 2019</h5>
-                <p>Cuadro de un castillo frances en un lago</p>
+        <section id="cdl_section">
+            <div class="popup">
+                <a href="#" id="back"></a>
+                <div class="fila horizontal">
+                    <input type="radio" name="navegacionCDL" id="_1" checked>
+                    <input type="radio" name="navegacionCDL" id="_2">
+                    <input type="radio" name="navegacionCDL" id="_3">
+                    <input type="radio" name="navegacionCDL" id="_4">
+                    <input type="radio" name="navegacionCDL" id="_5">
+                    <input type="radio" name="navegacionCDL" id="_6">
+                    <input type="radio" name="navegacionCDL" id="_7">
+                    <input type="radio" name="navegacionCDL" id="_8">
+                    <input type="radio" name="navegacionCDL" id="_9">
+                    <input type="radio" name="navegacionCDL" id="_10">
+                    <input type="radio" name="navegacionCDL" id="_11">
+                    <input type="radio" name="navegacionCDL" id="_12">
+                    <input type="radio" name="navegacionCDL" id="_13">
+                    <a target="_blank" href="img/CastilloDelLago/CDL_01.jpg"><img src="img/CastilloDelLago/CDL_01.jpg" alt="CDL_first"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_02.jpg"><img src="img/CastilloDelLago/CDL_02.jpg" alt="CDL_02"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_03.jpg"><img src="img/CastilloDelLago/CDL_03.jpg" alt="CDL_03"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_04.jpg"><img src="img/CastilloDelLago/CDL_04.jpg" alt="CDL_04"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_05.jpg"><img src="img/CastilloDelLago/CDL_05.jpg" alt="CDL_05"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_06.jpg"><img src="img/CastilloDelLago/CDL_06.jpg" alt="CDL_06"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_07.jpg"><img src="img/CastilloDelLago/CDL_07.jpg" alt="CDL_07"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_08.jpg"><img src="img/CastilloDelLago/CDL_08.jpg" alt="CDL_08"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_09.jpg"><img src="img/CastilloDelLago/CDL_09.jpg" alt="CDL_09"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_10.jpg"><img src="img/CastilloDelLago/CDL_10.jpg" alt="CDL_10"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_11.jpg"><img src="img/CastilloDelLago/CDL_11.jpg" alt="CDL_11"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_12.jpg"><img src="img/CastilloDelLago/CDL_12.jpg" alt="CDL_12"></a>
+                    <a target="_blank" href="img/CastilloDelLago/CDL_13.jpg"><img src="img/CastilloDelLago/CDL_13.jpg" alt="CDL_last"></a>
+                </div>
+                <div class="descripcion">
+                    <h2>CASTILLO DEL LAGO</h2>
+                    <h5>Ago 1, 2019 - Nov 28, 2019</h5>
+                    <p>Cuadro de un castillo frances en un lago</p>
+                </div>
+
+        </section>
+
+        <section id="cpr_section">
+            <div class="popup">
+                <a href="#" id="back"></a>
+                <div class="fila">
+                    <input type="radio" name="navegacionCPR" id="_1" checked>
+                    <input type="radio" name="navegacionCPR" id="_2">
+                    <input type="radio" name="navegacionCPR" id="_3">
+                    <input type="radio" name="navegacionCPR" id="_4">
+                    <input type="radio" name="navegacionCPR" id="_5">
+                    <input type="radio" name="navegacionCPR" id="_6">
+                    <input type="radio" name="navegacionCPR" id="_7">
+                    <input type="radio" name="navegacionCPR" id="_8">
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPRBoceto.jpg"><img src="img/ChicaDelPañueloRojo/LCPRBoceto.jpg" alt="LCPR_boceto"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR01.jpg"><img src="img/ChicaDelPañueloRojo/LCPR01.jpg" alt="LCPR_first"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR02.jpg"><img src="img/ChicaDelPañueloRojo/LCPR02.jpg" alt="LCPR_02"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR03.jpg"><img src="img/ChicaDelPañueloRojo/LCPR03.jpg" alt="LCPR_03"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR04.jpg"><img src="img/ChicaDelPañueloRojo/LCPR04.jpg" alt="LCPR_04"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR05.jpg"><img src="img/ChicaDelPañueloRojo/LCPR05.jpg" alt="LCPR_05"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR06.jpg"><img src="img/ChicaDelPañueloRojo/LCPR06.jpg" alt="LCPR_06"></a>
+                    <a target="_blank" href="img/ChicaDelPañueloRojo/LCPR07.jpg"><img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="LCPR_last"></a>
+                </div>
+                <div class="descripcion">
+                    <h2>CHICA DEL PAÑUELO ROJO</h2>
+                    <h5>mar 10, 2019 - abr 28, 2019</h5>
+                    <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza</p>
+                </div>
             </div>
         </section>
+
+        <section id="vdf_section">
+            <div class="popup">
+                <a href="#" id="back"></a>
+                <div class="fila">
+                    <input type="radio" name="navegacionVDF" id="_1" checked>
+                    <input type="radio" name="navegacionVDF" id="_2">
+                    <input type="radio" name="navegacionVDF" id="_3">
+                    <input type="radio" name="navegacionVDF" id="_4">
+                    <input type="radio" name="navegacionVDF" id="_5">
+                    <input type="radio" name="navegacionVDF" id="_6">
+                    <input type="radio" name="navegacionVDF" id="_7">
+                    <input type="radio" name="navegacionVDF" id="_8">
+                    <input type="radio" name="navegacionVDF" id="_9">
+                    <input type="radio" name="navegacionVDF" id="_10">
+                    <input type="radio" name="navegacionVDF" id="_11">
+                    <input type="radio" name="navegacionVDF" id="_12">
+                    <input type="radio" name="navegacionVDF" id="_13">
+                    <input type="radio" name="navegacionVDF" id="_14">
+                    <input type="radio" name="navegacionVDF" id="_15">
+                    <input type="radio" name="navegacionVDF" id="_16">
+                    <a target="_blank" href="img/VirgenDeFatima/VDFBoceto.jpg"><img src="img/VirgenDeFatima/VDFBoceto.jpg" alt="VDF_boceto"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF01.jpg"><img src="img/VirgenDeFatima/VDF01.jpg" alt="VDF_first"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF02.jpg"><img src="img/VirgenDeFatima/VDF02.jpg" alt="VDF_02"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF03.jpg"><img src="img/VirgenDeFatima/VDF03.jpg" alt="VDF_03"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF04.jpg"><img src="img/VirgenDeFatima/VDF04.jpg" alt="VDF_04"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF05.jpg"><img src="img/VirgenDeFatima/VDF05.jpg" alt="VDF_05"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF06.jpg"><img src="img/VirgenDeFatima/VDF06.jpg" alt="VDF_06"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF07.jpg"><img src="img/VirgenDeFatima/VDF07.jpg" alt="VDF_07"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF08.jpg"><img src="img/VirgenDeFatima/VDF08.jpg" alt="VDF_08"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF09.jpg"><img src="img/VirgenDeFatima/VDF09.jpg" alt="VDF_09"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF10.jpg"><img src="img/VirgenDeFatima/VDF10.jpg" alt="VDF_10"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF11.jpg"><img src="img/VirgenDeFatima/VDF11.jpg" alt="VDF_11"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF12.jpg"><img src="img/VirgenDeFatima/VDF12.jpg" alt="VDF_12"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF13.jpg"><img src="img/VirgenDeFatima/VDF13.jpg" alt="VDF_13"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF14.jpg"><img src="img/VirgenDeFatima/VDF14.jpg" alt="VDF_14"></a>
+                    <a target="_blank" href="img/VirgenDeFatima/VDF15.jpg"><img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF_Last"></a>
+                </div>
+                <div class="descripcion">
+                    <h2>Virgen de fatima</h2>
+                    <p>Cuadro de una imagen de la virgen de fatima</p>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer-right">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="footer-left">
             <p class="footer-links">
                 <a href="#" class="link-1">Home</a>
-                <a href="#">Blog</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="https://elias288.github.io/ElelisPage/">Portfolio</a>
             </p>
             <p>ArtelBianchi &copy; 2011</p>
         </div>

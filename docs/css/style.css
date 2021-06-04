@@ -43,11 +43,24 @@ input {
 }
 
 main>section {
-    margin: 55px 0px;
+    margin-top: 55px;
+    display: block;
 }
 
-.gallerysection {
+main section:not(:first-of-type) {
+    background-color: rgb(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: none;
+    cursor: default;
+    transition: opacity 200ms;
+}
+
+main section:target {
+    display: block;
 }
 
 #portada {
@@ -73,8 +86,8 @@ img {
     body {
         min-height: 100vh;
     }
-    main>section {
-        width: var(--ancho_PC);
+    main>section:first-child {
+        width: 1000px;
         margin: 55px auto;
     }
 }
