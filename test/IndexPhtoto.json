@@ -1,0 +1,33 @@
+[{
+        "nombre": "Castillo del lago",
+        "fotoPrincipal": "img/CastilloDelLago/CDL_13.jpg",
+        "fotos": {
+            "foto1": "img/CastilloDelLago/CDL_1.jpg",
+            "foto2": "img/CastilloDelLago/CDL_2.jpg",
+            "foto3": "img/CastilloDelLago/CDL_3.jpg",
+            "foto4": "img/CastilloDelLago/CDL_4.jpg",
+            "foto5": "img/CastilloDelLago/CDL_5.jpg",
+            "foto6": "img/CastilloDelLago/CDL_6.jpg",
+            "foto7": "img/CastilloDelLago/CDL_7.jpg",
+            "foto8": "img/CastilloDelLago/CDL_8.jpg",
+            "foto9": "img/CastilloDelLago/CDL_9.jpg",
+            "foto10": "img/CastilloDelLago/CDL_10.jpg",
+            "foto11": "img/CastilloDelLago/CDL_11.jpg",
+            "foto12": "img/CastilloDelLago/CDL_12.jpg",
+            "foto13": "img/CastilloDelLago/CDL_13.jpg"
+        }
+    },
+    {
+        "nombre": "Chica del pañuelo rojo",
+        "fotoPrincipal": "img/ChicaDelPañueloRojo/LCPR07.jpg",
+        "fotos": {
+            "foto1": "img/ChicaDelPañueloRojo/LCPR01.jpg",
+            "foto2": "img/ChicaDelPañueloRojo/LCPR02.jpg",
+            "foto3": "img/ChicaDelPañueloRojo/LCPR03.jpg",
+            "foto4": "img/ChicaDelPañueloRojo/LCPR04.jpg",
+            "foto5": "img/ChicaDelPañueloRojo/LCPR05.jpg",
+            "foto6": "img/ChicaDelPañueloRojo/LCPR06.jpg",
+            "foto7": "img/ChicaDelPañueloRojo/LCPR07.jpg"
+        }
+    }
+]
