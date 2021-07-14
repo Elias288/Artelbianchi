@@ -8,67 +8,60 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Artelbianchi</title>
 </head>
 
 <body>
-
     <header>
-        <h1>ArtelBianchi</h1>
-        <label for="chMenu" id="menutoggle">
+        <div>
+            <h1>ArtelBianchi</h1>
+            <label for="chMenu" id="menutoggle">
             <img src="img/menu-icon-01.png" alt="">
         </label>
-        <input type="checkbox" name="chMenu" id="chMenu">
+            <input type="checkbox" name="chMenu" id="chMenu">
 
-        <nav id="menu">
-            <label for="">HOME</label>
-            <label for="">SOBRE MI</label>
-        </nav>
+            <nav id="menu">
+                <label for="">HOME</label>
+                <label for="">SOBRE MI</label>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="row">
+        <section id="galeria">
             <div class="leftcolumn">
-                <div class="card">
-                    <h2>CASTILLO DEL LAGO</h2>
-                    <h5>Ago 1, 2019 - Nov 28, 2019</h5>
-                    <p>Cuadro de un castillo frances en un lago</p>
-                    <a href="view.html#cdl_section">Ver mas</a>
-                </div>
             </div>
-
             <div class="rightcolumn">
                 <div id="sobremi" class="card">
                     <h2>Sobre mi</h2>
                     <figure>
                         <img src="img/logoArtelbianchi.png" alt="Logo_Artelbianchi">
-                        <figcaption>My name is Elias Bianchi, I am an Uruguayan artist who likes to paint with different oil and acrylic techniques. I started painting from the age of 11 until now, I like to paint portraits... <a href="#about">more</a></figcaption>
+                        <figcaption>
+                            <p>
+                                Mi nombre es Elias Bianchi, soy Uruguayo que le gusta pintar con diferentes tecnicas de oleo y acrilico. Comencé a pintar desde los 11 años hasta ahora.
+                                <a href="#about">more</a>
+                            </p>
+                        </figcaption>
                     </figure>
                 </div>
-                <!--<div class="card">
-                    <h3>Popular Post</h3>
-                    <div class="fakeimg">Image</div><br>
-                    <div class="fakeimg">Image</div><br>
-                    <div class="fakeimg">Image</div>
-                </div>-->
+                <div id="ultimasPublicaciones" class="card">
+                    <h2>Ultimas publicaciones</h2>
+                </div>
                 <div id="sigueme" class="card">
-                    <h3>Sigueme</h3>
+                    <h2>Mis redes sociales</h2>
                     <ul>
-                        <li><a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square">  Facebook</i></a></li>
-                        <li><a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram">  Instagram</i></a></li>
-                        <li><a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"> Github</i></a></li>
+                        <li><a href="https://www.facebook.com/Artelbianchi"><i class="facebook">  Facebook</i></a></li>
+                        <li><a href="https://www.instagram.com/artelbianchi/"><i class="instagram">  Instagram</i></a></li>
+                        <li><a href="https://github.com/Elias288/Artelbianchi"><i class="github"> Github</i></a></li>
                     </ul>
-
-
-
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-right">
-            <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Artelbianchi"><i class="facebook"></i></a>
+            <a href="https://github.com/Elias288/Artelbianchi"><i class="github"></i></a>
+            <a href="https://www.instagram.com/artelbianchi/"><i class="instagram"></i></a>
         </div>
         <div class="footer-left">
             <p class="footer-links">
@@ -79,7 +72,7 @@
             <p>ArtelBianchi &copy; 2011</p>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

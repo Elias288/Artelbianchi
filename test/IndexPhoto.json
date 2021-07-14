@@ -1,0 +1,56 @@
+[{
+    "nombre": "Chica del pañuelo rojo",
+    "descripcion": "Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza.",
+    "fechas": "mar 10, 2019 - abr 28, 2019",
+    "fotos": [
+        "img/ChicaDelPañueloRojo/LCPRBoceto.jpg",
+        "img/ChicaDelPañueloRojo/LCPR01.jpg",
+        "img/ChicaDelPañueloRojo/LCPR02.jpg",
+        "img/ChicaDelPañueloRojo/LCPR03.jpg",
+        "img/ChicaDelPañueloRojo/LCPR04.jpg",
+        "img/ChicaDelPañueloRojo/LCPR05.jpg",
+        "img/ChicaDelPañueloRojo/LCPR06.jpg",
+        "img/ChicaDelPañueloRojo/LCPR07.jpg"
+    ]
+}, {
+    "nombre": "Virgen de Fatima",
+    "descripcion": "Retrato de la imagen de la virgen de fatima",
+    "fechas": "Feb 14, 2019 – Jul 25, 2019",
+    "fotos": [
+        "img/VirgenDeFatima/VDFBoceto.jpg",
+        "img/VirgenDeFatima/VDF01.jpg",
+        "img/VirgenDeFatima/VDF02.jpg",
+        "img/VirgenDeFatima/VDF03.jpg",
+        "img/VirgenDeFatima/VDF04.jpg",
+        "img/VirgenDeFatima/VDF05.jpg",
+        "img/VirgenDeFatima/VDF06.jpg",
+        "img/VirgenDeFatima/VDF07.jpg",
+        "img/VirgenDeFatima/VDF08.jpg",
+        "img/VirgenDeFatima/VDF09.jpg",
+        "img/VirgenDeFatima/VDF10.jpg",
+        "img/VirgenDeFatima/VDF11.jpg",
+        "img/VirgenDeFatima/VDF12.jpg",
+        "img/VirgenDeFatima/VDF13.jpg",
+        "img/VirgenDeFatima/VDF14.jpg",
+        "img/VirgenDeFatima/VDF15.jpg"
+    ]
+}, {
+    "nombre": "Castillo del lago",
+    "descripcion": "Cuadro de un castillo frances en un lago.",
+    "fechas": "Ago 1, 2019 - Nov 28, 2019",
+    "fotos": [
+        "img/CastilloDelLago/CDL_1.jpg",
+        "img/CastilloDelLago/CDL_2.jpg",
+        "img/CastilloDelLago/CDL_3.jpg",
+        "img/CastilloDelLago/CDL_4.jpg",
+        "img/CastilloDelLago/CDL_5.jpg",
+        "img/CastilloDelLago/CDL_6.jpg",
+        "img/CastilloDelLago/CDL_7.jpg",
+        "img/CastilloDelLago/CDL_8.jpg",
+        "img/CastilloDelLago/CDL_9.jpg",
+        "img/CastilloDelLago/CDL_10.jpg",
+        "img/CastilloDelLago/CDL_11.jpg",
+        "img/CastilloDelLago/CDL_12.jpg",
+        "img/CastilloDelLago/CDL_13.jpg"
+    ]
+}]

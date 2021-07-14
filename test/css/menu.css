@@ -1,6 +1,9 @@
 header {
     background: var(--color_principal);
     padding: 10px;
+}
+
+header div {
     display: flex;
     justify-content: space-between;
 }
@@ -51,7 +54,11 @@ header nav label:hover {
 
 @media (min-width: 1024px) {
     header {
-        padding: 0px 50px;
+        padding: 0px;
+    }
+    header div {
+        width: 1000px;
+        margin: auto;
     }
     header h1 {
         height: fit-content;
