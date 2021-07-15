@@ -1,0 +1,5 @@
+carrusel html fotos
+hover solo la imagen
+una card para cada publicacion
+modal
+fondo estatico

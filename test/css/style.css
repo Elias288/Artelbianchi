@@ -15,9 +15,17 @@
 }
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    min-height: 100vh;
+    /*background: url("../img/background.png");
+    background: url("../img/background.jpg");
+    background: url("../img/background2.jpg");*/
+    background: url("../img/background2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 input {
@@ -49,18 +57,17 @@ i.github::before {
 /*-------------------------------HOME-------------------------------*/
 
 #galeria {
-    margin-top: 30px;
-    box-shadow: 5px 10px 8px #888888;
-    background-color: #fff;
+    margin-top: 60px;
 }
 
 .card {
-    width: 90%;
-    margin: 30px auto;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    border: #8f9296 1px solid;
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .card ul {
@@ -75,34 +82,25 @@ i.github::before {
     padding: 0;
 }
 
-.rightcolumn .card {
-    border-radius: 20px;
-}
-
 .rightcolumn .card h2 {
     width: fit-content;
     margin: 10px;
 }
 
-.leftcolumn .card {
+.leftcolumn .card img {
+    width: 100%;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
     cursor: pointer;
 }
 
-.leftcolumn .card:hover,
+.leftcolumn .card img:hover,
 #ultimasPublicaciones div:hover {
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-}
-
-.leftcolumn .card img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    min-height: 300px;
-}
-
-.leftcolumn .card .info {
-    padding: 0px 10px 10px;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 #sobremi figure {
@@ -122,10 +120,9 @@ i.github::before {
 }
 
 #ultimasPublicaciones img {
-    float: left;
     object-fit: cover;
-    height: 100px;
-    width: 100px;
+    width: 100%;
+    height: 120px;
 }
 
 #sigueme ul {
@@ -229,10 +226,20 @@ footer .footer-left p.footer-links {
     #galeria {
         display: flex;
         width: 1000px;
-        margin: 30px auto;
+        margin: 60px auto 0px;
     }
     .rightcolumn {
         width: 35%;
+        margin-left: 30px;
+    }
+    #listaImg img {
+        margin: 30px auto 0px;
+    }
+    .muestras {
+        margin: 30px auto 0px;
+    }
+    .muestras:last-child {
+        margin-bottom: 30px;
     }
     /*-------------------------------FOOTER-------------------------------*/
     footer .footer-right {
