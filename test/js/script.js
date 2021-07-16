@@ -1,3 +1,5 @@
+let ImgIndex = 1;
+
 //------------------------------------------------TRAER LISTA DE PUBLICACIONES------------------------------------------------
 
 function listarPublicaciones() {
@@ -39,23 +41,19 @@ function listarPublicaciones() {
             for (const todo of data) {
                 let { nombre, descripcion, fechas, fotos } = todo;
 
-                let fotosLength = Object.keys(todo.fotos).length; //OBTIENE LA CANTIDAD DE FOTOS
                 //console.log(fotosLength);
+                let fotosLength = Object.keys(todo.fotos).length; //OBTIENE LA CANTIDAD DE FOTOS
                 let fotoPrincipal = fotos[fotosLength - 1]; //OBTIENE LA ULTIMA FOTO
-                //console.log(fotoPrincipal);
-                /*for (let img in fotos) { //LISTA TODOS LOS ELEMENTOS DE FOTO
-                    console.log(fotos[img]);
-                }*/
 
-                let card = document.createElement('div');
-                let imagen = document.createElement('img');
-                let content = document.createElement('div');
-                let titulo = document.createElement('h2');
-                let fech = document.createElement('h5');
-                let desc = document.createElement('p');
+                const card = document.createElement('div'),
+                    imagen = document.createElement('img'),
+                    content = document.createElement('div'),
+                    titulo = document.createElement('h2'),
+                    fech = document.createElement('h5'),
+                    desc = document.createElement('p');
 
                 card.classList.add("card");
-                card.addEventListener('click', function() {
+                card.addEventListener('click', () => {
                     abrirImagen(todo);
                 });
 
@@ -63,7 +61,10 @@ function listarPublicaciones() {
 
                 content.className = "content";
                 titulo.innerText = `${nombre}`
-                desc.innerText = `${descripcion}`
+
+                var descri = `${descripcion}`.split('/')[0];
+                desc.innerHTML = descri + '...';
+
                 fech.innerText = `${fechas}`
 
                 content.append(titulo);
@@ -73,38 +74,91 @@ function listarPublicaciones() {
                 card.append(content);
                 lista.append(card);
             }
+
+            //let ultima = data[0];
+            //abrirImagen(ultima);
         });
 }
 
 //------------------------------------------------ABRIR IMAGEN------------------------------------------------
 function abrirImagen(obj) {
     //console.log(obj);
-
+    topFunction();
     const cards = document.querySelectorAll(".leftcolumn .card");
     //console.log(cards);
 
-    //LIMPIO LA PANTALLA PRINCIPAL
+    //--------------------------LIMPIO LA PANTALLA PRINCIPAL/--------------------------
     //console.log(cards.length);
     for (let index = 0; index < cards.length; index++) {
         //console.log(cards[index]);
         cards[index].style.display = 'none';
     }
 
-    const lista = document.querySelector(".leftcolumn");
-    const card = document.createElement('div')
+
+    //--------------------------CREO LOS ELEMENTOS--------------------------
+    const leftcolumn = document.querySelector(".leftcolumn"),
+        card = document.createElement('div'),
+        TituloImagen = document.createElement('h1'),
+        contenido = document.createElement('div'),
+        siguiente = document.createElement('a'),
+        anterior = document.createElement('a'),
+        TituloDescripcion = document.createElement('h3'),
+        descripcion = document.createElement('p');
+
     let Cantfotos = Object.keys(obj.fotos).length; //OBTIENE LA CANTIDAD DE FOTOS
     //console.log(Cantfotos);
 
     card.classList.toggle('card');
+    card.classList.toggle('carruseles');
 
-    for (let index = 0; index < Cantfotos - 1; index++) {
-        let img = document.createElement('img');
+    TituloImagen.innerText = obj.nombre;
 
+    card.append(TituloImagen);
+
+    contenido.classList.toggle('contenido');
+
+    anterior.innerHTML = "&#10094;"; //anterior
+    anterior.classList.toggle('anterior');
+    anterior.addEventListener('click', function() {
+        //console.log('anterior');
+        SiguienteCarrusel(-1)
+    });
+    siguiente.innerHTML = "&#10095;"; //siguiente
+    siguiente.classList.toggle('siguiente');
+    siguiente.addEventListener('click', function() {
+        //console.log('siguiente');
+        SiguienteCarrusel(1);
+    });
+    contenido.append(anterior);
+
+    for (let index = 0; index <= Cantfotos - 1; index++) {
+        const carrusel = document.createElement('div'),
+            img = document.createElement('img'),
+            ContIndex = document.createElement('p');
         img.src = obj.fotos[index];
 
-        card.append(img);
+        ContIndex.id = "index";
+        ContIndex.innerText = index + 1 + "/" + Cantfotos;
+
+        carrusel.classList.toggle('carrusel');
+        carrusel.append(img);
+        carrusel.append(ContIndex);
+        contenido.append(carrusel);
     }
-    lista.append(card);
+
+    TituloDescripcion.innerHTML = "Descripcion: ";
+    descripcion.innerHTML = obj.descripcion.split('/')[0] + obj.descripcion.split('/')[1];
+
+    contenido.append(siguiente);
+
+    card.append(contenido);
+    card.append(TituloDescripcion);
+    card.append(descripcion);
+
+    leftcolumn.append(card);
+    verCarrusel(ImgIndex);
+
+
 };
 
 //------------------------------------------------MENU------------------------------------------------
@@ -113,5 +167,27 @@ document.getElementById('menutoggle').addEventListener('click', function(evt) {
     menu.classList.toggle('active');
 });
 
+function verCarrusel(n) {
+    const carruseles = document.getElementsByClassName('carrusel');
+    //console.log(carruseles.length);
+    //console.log(n);
+
+    if (n > carruseles.length) { ImgIndex = 1 }
+    if (n < 1) { ImgIndex = carruseles.length }
+    for (let index = 0; index < carruseles.length; index++) {
+        carruseles[index].classList.remove('activo');
+    }
+
+    carruseles[ImgIndex - 1].classList.toggle('activo');
+}
+
+function SiguienteCarrusel(n) {
+    verCarrusel(ImgIndex += n);
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 listarPublicaciones();

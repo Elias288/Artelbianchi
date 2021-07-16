@@ -3,16 +3,28 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
+    background: rgba(7, 30, 82, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+header a,
+header label {
+    color: rgb(52, 115, 209);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+header a {
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    user-select: none;
 }
 
 .header {
     width: 100%;
     height: fit-content;
     padding: 10px 0px;
-    color: rgb(52, 115, 209);
     top: 0px;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
 }
 
 .header img {
@@ -49,7 +61,7 @@ header {
     transition: 0.5s;
     cursor: pointer;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(7, 30, 82, 0.8);
     backdrop-filter: blur(5px);
 }
 
@@ -66,7 +78,7 @@ header {
 }
 
 header nav label:hover {
-    background: var(--color_selected);
+    background: rgba(3, 20, 53, 0.8);
 }
 
 @media (min-width: 1024px) {
@@ -74,20 +86,18 @@ header nav label:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(7, 30, 82, 0.5);
         backdrop-filter: blur(5px);
     }
     .header {
-        background: none;
-        backdrop-filter: none;
-        width: fit-content;
+        width: max-content;
         padding: 0px 15px;
     }
     .header div {
-        width: fit-content;
+        width: auto;
         margin: 0px;
     }
-    header h1 {
+    header a {
         height: fit-content;
         padding: 9.5px 0px;
     }
@@ -105,6 +115,9 @@ header nav label:hover {
         display: flex;
         background: none;
         backdrop-filter: none;
+    }
+    #menu.active {
+        width: auto;
     }
     #menu a,
     #menu label {
