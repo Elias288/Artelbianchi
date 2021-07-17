@@ -5,116 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2664b0a518.js" crossorigin="anonymous"></script>
-
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>Artelbianchi</title>
 </head>
 
 <body>
-    <!--HEADER-->
     <header>
-        <div id="container">
-            <h1>ArtelBianchi</h1>
-            <label for="chMenu" id="menutoggle"></label>
-            <input type="checkbox" name="chMenu" id="chMenu">
-            <nav id="menu">
-                <a href="">HOME</a>
-                <!--<a href="gallery.html">GALERIA</a>-->
-                <a href="#about">SOBRE MI</a>
-            </nav>
+        <div class="header">
+            <div>
+                <a href=""><img src="img/logoArtelbianchi.png" alt="">ArtelBianchi</a>
+                <label for="chMenu" id="menutoggle"><img src="img/menu-icon-01.png" alt=""></label>
+            </div>
         </div>
+        <nav id="menu">
+            <label for="">INICIO</label>
+            <label for="">SOBRE MI</label>
+        </nav>
     </header>
-    <main>
-        <!--HOME-->
-        <section id="home">
-            <div class="header">
-                <img src="img/Portada.jpg" alt="portada">
-            </div>
-            <div class="row">
-                <div class="leftcolumn">
-
-                    <div class="card">
-                        <h2>CASTILLO DEL LAGO</h2>
-                        <h5>Ago 1, 2019 - Nov 28, 2019</h5>
-                        <div class="fakeimg">
-                            <img src="img/CastilloDelLago/CDL_13.jpg" alt="CDL">
-                        </div>
-                        <p>Cuadro de un castillo frances en un lago</p>
-                        <a href="view.html#cdl_section">Ver mas</a>
-                    </div>
-
-                    <div class="card">
-                        <h2>CHICA DEL PAÑUELO ROJO</h2>
-                        <h5>mar 10, 2019 - abr 28, 2019</h5>
-                        <div class="fakeimg"><img src="img/ChicaDelPañueloRojo/LCPR07.jpg" alt="LCPR"></div>
-                        <p>Un cuadro sobre una chica italiana con un pañuelo rojo embuelto en la cabeza.</p>
-                        <a href="view.html#cpr_section">Ver mas</a>
-                    </div>
-
-                    <div class="card">
-                        <h2>VIRGEN DE FATIMA</h2>
-                        <h5>Feb 21, 2019 - Jul 25, 2019</h5>
-                        <div class="fakeimg"><img src="img/VirgenDeFatima/VDF15.jpg" alt="VDF"></div>
-                        <p>Cuadro de una imagen de la Virgen de Fatima</p>
-                        <a href="view.html#vdf_section">Ver mas</a>
-                    </div>
-
-                </div>
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>About Me</h2>
-                        <figure>
-                            <div class="fakeimg">
-                                <img src="img/logoArtelbianchi.png" alt="Logo_Artelbianchi">
-                            </div>
-                            <figcaption>My name is Elias Bianchi, I am an Uruguayan artist who likes to paint with different oil and acrylic techniques. I started painting from the age of 11 until now, I like to paint portraits... <a href="#about">more</a></figcaption>
-                        </figure>
-                    </div>
-                    <!--<div class="card">
-                        <h3>Popular Post</h3>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div>
-                    </div>-->
-                    <div class="card">
-                        <h3>Follow Me</h3>
-                        <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square">  Facebook</i></a>
-                        <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram">  Instagram</i></a>
-                        <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"> Github</i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--ABOUT-->
-        <section id="about" class="modaloverlay">
-            <div class="modal">
-                <a href="#" id="back"></a>
-                <div>
+    <section id="galeria">
+        <div class="leftcolumn"></div>
+        <div class="rightcolumn">
+            <div id="sobremi" class="card">
+                <h2>Sobre mi</h2>
+                <figure>
                     <img src="img/logoArtelbianchi.png" alt="Logo_Artelbianchi">
-                    <h2>Artelbianchi</h2>
-                    <h5>Elias Bianchi - Artist</h5>
-                </div>
-                <div>
-                    <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"></i></a>
-                    <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div>
-                    <p>My name is Elias Bianchi, I am an Uruguayan artist who likes to paint with different oil and acrylic techniques. I started painting from the age of 11 until now, I like to paint portraits and perfect my drawing technique. I am currently
-                        studying computer science without neglecting my painting hobby.</p>
-                </div>
+                    <figcaption>
+                        <p>
+                            Mi nombre es Elias Bianchi, soy Uruguayo que le gusta pintar con diferentes tecnicas de oleo y acrilico. Comencé a pintar desde los 11 años hasta ahora.
+                            <a href="#about">more</a>
+                        </p>
+                    </figcaption>
+                </figure>
             </div>
-        </section>
-
-    </main>
+            <div id="ultimasPublicaciones" class="card">
+                <h2>Ultimas publicaciones</h2>
+            </div>
+            <div id="sigueme" class="card">
+                <h2>Mis redes sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/Artelbianchi"><i class="facebook">  Facebook</i></a></li>
+                    <li><a href="https://www.instagram.com/artelbianchi/"><i class="instagram">  Instagram</i></a></li>
+                    <li><a href="https://github.com/Elias288/Artelbianchi"><i class="github"> Github</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-right">
-            <a href="https://www.facebook.com/Artelbianchi"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://github.com/Elias288/Artelbianchi"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/artelbianchi/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Artelbianchi"><i class="facebook"></i></a>
+            <a href="https://github.com/Elias288/Artelbianchi"><i class="github"></i></a>
+            <a href="https://www.instagram.com/artelbianchi/"><i class="instagram"></i></a>
         </div>
         <div class="footer-left">
             <p class="footer-links">
@@ -125,6 +67,7 @@
             <p>ArtelBianchi &copy; 2011</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
