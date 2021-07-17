@@ -1,0 +1,56 @@
+[{
+    "nombre": "Chica del pañuelo rojo",
+    "descripcion": "El retrato \"La chica italiana\" pintado en óleo sobre lienzo / fue uno de los pocos cuadros de mi trabajo que no fue pintado en el estudio de mi maestra sino que fue pintado en mi casa debido a unas pequeñas vacaciones que se tomó mi maestra. Debido a que en mi casa no contaba con todos los materiales y comodidades tuve que improvisarme un atril con lo que tenía a mano, aprovechando esa situación pude registrar en video todo el proceso y transmitirlo en vivo en mi página de <a href=\"https://www.facebook.com/Artelbianchi\">facebook</a>.",
+    "fechas": "mar 10, 2019 - abr 28, 2019",
+    "fotos": [
+        "img/ChicaDelPañueloRojo/LCPRBoceto.jpg",
+        "img/ChicaDelPañueloRojo/LCPR01.jpg",
+        "img/ChicaDelPañueloRojo/LCPR02.jpg",
+        "img/ChicaDelPañueloRojo/LCPR03.jpg",
+        "img/ChicaDelPañueloRojo/LCPR04.jpg",
+        "img/ChicaDelPañueloRojo/LCPR05.jpg",
+        "img/ChicaDelPañueloRojo/LCPR06.jpg",
+        "img/ChicaDelPañueloRojo/LCPR07.jpg"
+    ]
+}, {
+    "nombre": "Virgen de Fatima",
+    "descripcion": "\"La virgen de Fátima\" es un retrato pintado en óleo sobre una fibra de madera/. La idea de pintarla surgió a principios del 2019 en la Jornada Mundial de la Juventud en Panamá a la que asistí, en esa jornada me encontré con la imagen de la virgen en una carpa a modo de templo, para después participar de una procesión donde la virgen era la figura principal. Toda la jornada fue un hecho que me marco y que para representarlo que mejor que la imagen de la virgen de Fátima.",
+    "fechas": "Feb 14, 2019 – Jul 25, 2019",
+    "fotos": [
+        "img/VirgenDeFatima/VDFBoceto.jpg",
+        "img/VirgenDeFatima/VDF01.jpg",
+        "img/VirgenDeFatima/VDF02.jpg",
+        "img/VirgenDeFatima/VDF03.jpg",
+        "img/VirgenDeFatima/VDF04.jpg",
+        "img/VirgenDeFatima/VDF05.jpg",
+        "img/VirgenDeFatima/VDF06.jpg",
+        "img/VirgenDeFatima/VDF07.jpg",
+        "img/VirgenDeFatima/VDF08.jpg",
+        "img/VirgenDeFatima/VDF09.jpg",
+        "img/VirgenDeFatima/VDF10.jpg",
+        "img/VirgenDeFatima/VDF11.jpg",
+        "img/VirgenDeFatima/VDF12.jpg",
+        "img/VirgenDeFatima/VDF13.jpg",
+        "img/VirgenDeFatima/VDF14.jpg",
+        "img/VirgenDeFatima/VDF15.jpg"
+    ]
+}, {
+    "nombre": "Castillo del lago",
+    "descripcion": "\"El castillo francés\" es un paisajismo pintado en acrílico sobre una fibra de madera/. Pintado como una práctica de paisajismo con perspectiva de un edificio elegí una fotografía del castillo château de sully-sur-loire en Francia ya que también me serviría para aplicar reflexión sobre el agua.",
+    "fechas": "Ago 1, 2019 - Nov 28, 2019",
+    "fotos": [
+        "img/CastilloDelLago/CDL_01.jpg",
+        "img/CastilloDelLago/CDL_02.jpg",
+        "img/CastilloDelLago/CDL_03.jpg",
+        "img/CastilloDelLago/CDL_04.jpg",
+        "img/CastilloDelLago/CDL_05.jpg",
+        "img/CastilloDelLago/CDL_06.jpg",
+        "img/CastilloDelLago/CDL_07.jpg",
+        "img/CastilloDelLago/CDL_08.jpg",
+        "img/CastilloDelLago/CDL_09.jpg",
+        "img/CastilloDelLago/CDL_10.jpg",
+        "img/CastilloDelLago/CDL_11.jpg",
+        "img/CastilloDelLago/CDL_12.jpg",
+        "img/CastilloDelLago/CDL_13.jpg"
+    ]
+}]

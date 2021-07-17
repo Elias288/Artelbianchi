@@ -1,0 +1,314 @@
+@import url(menu.css);
+:root {
+    --color_principal: rgb(95, 158, 160);
+    --color_principal_transparente: rgb(95, 158, 160, 0.9);
+    --color_selected: rgba(255, 255, 255, 0.3);
+    --ancho_PC: 1000px;
+    --width-img: 100%;
+    --height-img: 400px
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*background: url("../img/background.png");
+    background: url("../img/background.jpg");
+    background: url("../img/background2.jpg");*/
+    background: url("../img/background2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    display: none;
+}
+
+i::before {
+    background-size: 16px 16px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+i.facebook::before {
+    background-image: url(../img/facebook.png);
+}
+
+i.instagram::before {
+    background-image: url(../img/instagram.png);
+}
+
+i.github::before {
+    background-image: url(../img/signo-de-github.png);
+}
+
+
+/*-------------------------------HOME-------------------------------*/
+
+#galeria {
+    margin-top: 60px;
+}
+
+.card {
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card ul {
+    list-style: none;
+}
+
+.leftcolumn,
+.rightcolumn {
+    float: left;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+}
+
+.rightcolumn .card h2 {
+    width: fit-content;
+    margin: 10px;
+}
+
+.leftcolumn .card img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+.leftcolumn .card .content img:hover,
+#ultimasPublicaciones div:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+#sobremi figure {
+    padding: 20px;
+}
+
+#sobremi img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+#ultimasPublicaciones div {
+    cursor: pointer;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#ultimasPublicaciones img {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+}
+
+#sigueme ul {
+    padding: 10px 20px;
+}
+
+#sigueme a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*-------------------------------VISTA------------------------------- */
+
+.leftcolumn .card .carrusel {
+    display: none;
+}
+
+.leftcolumn .card .carrusel.activo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftcolumn .card.carruseles img {
+    object-fit: contain;
+    border-radius: 0px;
+    max-height: none;
+    margin: 0px;
+}
+
+.carruseles .contenido {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carruseles .contenido a {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    height: max-content;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 16px;
+    border-radius: 3px 3px 0 0;
+    user-select: none;
+    transition: 0.6s ease;
+    z-index: 1;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.carruseles .contenido a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.anterior {
+    margin-right: -50px;
+}
+
+.siguiente {
+    margin-left: -50px;
+}
+
+#index {
+    font-weight: bold;
+}
+
+
+/*-------------------------------FOOTER-------------------------------*/
+
+footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 20px;
+}
+
+footer .footer-left,
+footer .footer-right {
+    text-align: center;
+}
+
+footer .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+}
+
+footer .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+footer p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+footer p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+footer .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+footer .footer-links .link-1:before {
+    content: none;
+}
+
+footer .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+footer .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+footer p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-left p.footer-links {
+    line-height: 1.8;
+}
+
+@media (min-width: 1024px) {
+    /*-------------------------------HOME-------------------------------*/
+    #galeria {
+        display: flex;
+        width: 1000px;
+        margin: 60px auto 0px;
+    }
+    .rightcolumn {
+        width: 35%;
+        margin-left: 30px;
+    }
+    #listaImg img {
+        margin: 30px auto 0px;
+    }
+    .muestras {
+        margin: 30px auto 0px;
+    }
+    .muestras:last-child {
+        margin-bottom: 30px;
+    }
+    /*-------------------------------VISTA-------------------------------*/
+    .leftcolumn .card.card.carruseles img {
+        max-height: 60vh;
+    }
+    /*-------------------------------FOOTER-------------------------------*/
+    footer .footer-right {
+        float: right;
+        margin-top: 6px;
+        max-width: 180px;
+    }
+    footer .footer-left {
+        text-align: left;
+    }
+}
