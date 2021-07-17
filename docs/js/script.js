@@ -53,11 +53,11 @@ function listarPublicaciones() {
                     desc = document.createElement('p');
 
                 card.classList.add("card");
-                card.addEventListener('click', () => {
-                    abrirImagen(todo);
-                });
 
                 imagen.src = fotoPrincipal;
+                imagen.addEventListener('click', () => {
+                    abrirImagen(todo);
+                });
 
                 content.className = "content";
                 titulo.innerText = `${nombre}`
