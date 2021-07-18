@@ -13,5 +13,5 @@ En el inicio de esta pagina web se listan todas las publicaciones de artelbianch
 - [X] Responsive aplicado.
 - [X] Redes sociales.
 - [X] About.
-- [ ] Navegacion Path.
+- [X] Navegacion Path.
 - [ ] Favoritos.
