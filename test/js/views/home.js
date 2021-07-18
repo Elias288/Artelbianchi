@@ -1,6 +1,9 @@
 export function home() {
 
-    const listaCards = document.createElement('div');
+    const listaCards = document.createElement('div'),
+        leftSobreMi = document.querySelector('.rightcolumn .sobremi');
+
+    leftSobreMi.style.display = 'block';
 
     fetch("IndexPhoto.json")
         .then(response => response.json())

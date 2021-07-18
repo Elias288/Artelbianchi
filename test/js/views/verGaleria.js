@@ -1,11 +1,16 @@
+import { topFunction } from '../main.js';
+
 let ImgIndex = 1;
 export function verGaleria(nom) {
-    ImgIndex = 1;
     topFunction();
+    ImgIndex = 1;
     let nom2 = nom.replace(/-/g, " ").replace(/%C3%B1/g, "ñ");
-    console.log(nom2);
+    //console.log(nom2);
 
-    const carruseles = document.createElement('div');
+    const carruseles = document.createElement('div'),
+        leftSobreMi = document.querySelector('.rightcolumn .sobremi');
+
+    leftSobreMi.style.display = 'block';
     carruseles.classList.toggle('card');
     carruseles.classList.toggle('carruseles');
     carruseles.innerHTML = `<div class="contenido"><a class=\"anterior\">&#10094;</a></div>`;
@@ -71,10 +76,4 @@ export function verCarrusel(n) {
 
 export function SiguienteCarrusel(n) {
     verCarrusel(ImgIndex += n);
-}
-
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }

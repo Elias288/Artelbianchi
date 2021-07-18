@@ -1,5 +1,6 @@
 import { home } from '../views/home.js';
 import { verGaleria } from '../views/verGaleria.js';
+import { About } from '../views/about.js';
 
 const leftcolumn = document.getElementById('leftcolumn');
 
@@ -23,8 +24,8 @@ const router = (route) => {
             case '#/view':
                 var picture = params[2];
                 return leftcolumn.appendChild(verGaleria(picture));
-            case '#/About':
-                return console.log('about')
+            case '#/about':
+                return leftcolumn.append(About());
             default:
                 return console.log('404')
         }
