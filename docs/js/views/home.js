@@ -26,7 +26,7 @@ export function home() {
                         <a href="#/view/${nombre.replace(/ /g, "-")}">
                             <img src="${fotos[fotosLength - 1]}">
                         </a>
-                        <h5>${fechas}</5>
+                        <h5>${fechas}</h5>
                         <p>${descripcion.split('/')[0]}...</p>
                     </div>
                 `;
