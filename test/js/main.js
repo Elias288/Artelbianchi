@@ -9,10 +9,6 @@ window.addEventListener('hashchange', () => {
     router(window.location.hash)
 });
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
 
 //------------------------------------------------MENU------------------------------------------------
 document.getElementById('menutoggle').addEventListener('click', function(evt) {

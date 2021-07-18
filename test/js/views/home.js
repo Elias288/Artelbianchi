@@ -20,7 +20,7 @@ export function home() {
                 card.innerHTML = `
                     <div class="content">
                         <h2>${nombre}</h2>
-                        <a href="#/view/${nombre.replace(/ /g, "-").toLowerCase()}">
+                        <a href="#/view/${nombre.replace(/ /g, "-")}">
                             <img src="${fotos[fotosLength - 1]}">
                         </a>
                         <h5>${fechas}</5>
