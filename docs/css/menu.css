@@ -69,7 +69,7 @@ header a {
     width: 100%;
 }
 
-#menu label {
+#menu a {
     display: block;
     border-bottom: 1px solid #fff;
     font-size: 30px;
@@ -77,7 +77,7 @@ header a {
     text-decoration: none;
 }
 
-header nav label:hover {
+#menu a:hover {
     background: rgba(3, 20, 53, 0.8);
 }
 
@@ -119,8 +119,7 @@ header nav label:hover {
     #menu.active {
         width: auto;
     }
-    #menu a,
-    #menu label {
+    #menu a {
         height: fit-content;
         border: none;
         font-size: 14px;
