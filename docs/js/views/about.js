@@ -12,7 +12,7 @@ export function About() {
     <div class="contenido">
         <img src="img/logoArtelbianchi.png" alt="Logo_Artelbianchi">
         <h2>Artelbianchi</h2>
-        <h5>Elias Bianchi - Artist</h5>
+        <h5>Elias Bianchi - Artista</h5>
         <div class="links">
             <a href="https://www.facebook.com/Artelbianchi"><i class="facebook"></i></a>
             <a href="https://github.com/Elias288/Artelbianchi"><i class="github"></i></a>
